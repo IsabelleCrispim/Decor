@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;200;300;400&family=Six+Caps&display=swap"
+        rel="stylesheet">
+    <script src="./script.js" defer></script>
+    <title>Sucullent</title>
+</head>
+
+<body>
+    <nav id="menu" class="nav-menu">
+        <div class="logo"><strong>Succulent</strong></div>
+        <input id="nav-toggle" type="checkbox">
+        <ul class="list-menu">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#about-us">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#blog">Blog</a></li>
+        </ul>
+        <label for="nav-toggle" class="icon-toggle">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav>
+    <!--Home-->
+    <section id="home" class="grid">
+        <div class="msg-welcome">
+            <h2>Home</h2>
+            <p id="phar">Sed in magna mi. Nullam mollis iaculis nisi, ac accumsan neque congue ut. Nunc in vulputate
+                metus, et
+                malesuada tellus. Maecenas a leo scelerisque, malesuada turpis a, pulvinar justo. Maecenas tristique
+                libero et ex mattis, nec bibendum enim ornare.</p>
+            <a href="#products" class="button">Buy something</a>
+        </div>
+        <div class="img-welcome">
+            <img src="Images/Product/plantaHomemenor.png" alt="clean-decoration">
+        </div>
+    </section>
+
+
+
+    <section id="about-us" class="grid">
+        <div class="msg-about">
+            <h2>About us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam consequat nibh, non varius
+                quam bibendum sed. Nunc nulla mauris, sagittis et massa id, egestas eleifend quam. Nunc vehicula
+                arcu enim, id commodo eros euismod placerat. Sed vel venenatis ex. Donec ultricies elit vitae lacus
+                imperdiet, et tincidunt ante euismod.</p>
+            <a href="#contact" class="button">Contact us</a>
+        </div>
+    </section>
+
+    <section id="products">
+        <div class="products-list grid">
+            <h2 class="title-products"> Products</h2>
+            <!--Card-->
+            <div class="card" onclick="hideAndShow()">
+                <div class=card-img>
+                    <img src=" https://images.unsplash.com/photo-1600411833196-7c1f6b1a8b90?ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MjB8MjE2MjM5OTF8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                        alt="">
+
+                </div>
+                <div class="card-body">
+                    <div class="body-product">
+                        <h3>Product1</h3>
+                        <span id="price-product">$ 70,00</span>
+                        <a href="" class="button">BUY</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section id="blog">
+        <div class="blog-news grid ">
+            <h2>Blog</h2>
+            <a href="">
+                <img src="https://images.unsplash.com/photo-1500353391678-d7b57979d6d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80"
+                    alt="">
+                <h3>How to start a suculent garden?</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam consequat nibh, non varius
+                    quam bibendum sed. Nunc nulla mauris, sagittis et massa id, egestas eleifend quam. Nunc vehicula
+                    arcu enim, id commodo eros euismod placerat.</p>
+            </a>
+            <a href="">
+                <img src="https://images.unsplash.com/photo-1551893665-f843f600794e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80"
+                    alt="">
+                <h3>How to start a suculent garden?</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam consequat nibh, non varius
+                    quam bibendum sed. Nunc nulla mauris, sagittis et massa id, egestas eleifend quam. Nunc vehicula
+                    arcu enim, id commodo eros euismod placerat.</p>
+            </a>
+        </div>
+    </section>
+
+    <section id="contact-us">
+        <h2>Get in touch</h2>
+        <form>
+            <input type="text" placeholder="NAME">
+            <input type="email" placeholder="EMAIL">
+        </form>
+    </section>
+
+
+    <footer>
+        <div class="grid">
+            <p class="copyright">Copyright 20202 Decor Succulent</p>
+            <ul class="social">
+                <li>
+                    <a href=""><img src="Images/instagram.svg" alt="instagram"></a>
+                </li>
+                <li>
+                    <a href=""><img src="Images/facebook.svg" alt="facebook"></a>
+                </li>
+                <li>
+                    <a href=""><img src="Images/signo-de-pinterest.svg" alt="pinterest"></a>
+                </li>
+            </ul>
+        </div>
+
+    </footer>
+    <!--Card Product-->
+    <section id="product-card" class="hidden">
+        <div class="card-grid grid">
+            <div class="img-card">
+                <img src="Images/Product/plantaHomemenor.png" alt="">
+            </div>
+            <div class="body-card">
+                <div class="menu-card ">
+                    <ul class="">
+                        </li><a href="#home" alt=""></a>Home</li>
+                        </li><a href="" alt=""></a>Cart</li>
+                        </li><a href="#product" alt=""></a>Back</li>
+                    </ul>
+                    <div class="button-card">
+                        <button onclick="hideAndShow()">X</button>
+                    </div>
+                </div>
+                <!--Text Card-->
+                <div class="text-card">
+                    <div class="title-card">
+                        <h3>Sansevieira trifasciata Prain “Lengua de Suegra”</h3>
+                    </div>
+                    <div class="description">
+                        <span id="price">$ 70,00</span>
+                        <p>Description: <span>Like some other members of its genus, D. trifasciata yields bowstring
+                                hemp, a strong plant fiber once used to make bowstrings.<br>
+                                Fonte: Wikipédia.</span></p>
+                        <div>
+                            <div class="increment">
+                                <label>Quantity:</label>
+                                <div class="input-card">
+                                    <button onclick="increment()">+</button>
+                                    <input id="input-card" type="number" min=100 max=110>
+                                    <button onclick="decrement()">-</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Button Card-->
+                        <div class="button-card">
+                            <a href="" class="button-cart">Add to a cart</a>
+                            <a href="" class="button">BUY</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+
+</html>
